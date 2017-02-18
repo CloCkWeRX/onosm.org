@@ -82,3 +82,14 @@ footer {
     margin-top: 10em;
     font-size: 80%;
 }
+
+#share {
+    position: fixed;
+    top: 25%;
+    left: 10px;
+    font-size: 200%;
+}
+#share a {
+    display: block;
+    margin-bottom: 10px;
+}

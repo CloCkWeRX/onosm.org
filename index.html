@@ -7,6 +7,10 @@
         <link rel='stylesheet' type='text/css' href='css/site.css' />
         <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.css' />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.0/leaflet.css" />
+        <!-- Share button assets -->
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"/>
+        <link rel='stylesheet' type='text/css' href='css/sbg.css' />
+        <script src="js/sbg.js"></script>
         <!--[if lte IE 8]>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.0/leaflet.ie.css" />
         <![endif]-->
@@ -86,8 +90,30 @@
                 </p>
             </div>
 
-            <footer><p class="center">Source code available on <a href="https://github.com/osmlab/onosm.org">Github</p></footer>
+            <section id='share'>
+                <a class="sbg-button sbg-button-facebook"  data-sbg-network="facebook"  data-sbg-url="http://onosm.org/"  data-sbg-title="Add your business to openstreetmap"  data-sbg-summary="A simple and easy way to list your business with openstreetmap"  data-sbg-image="https://onosm.org/img/osm.png"  data-sbg-width="600"  data-sbg-height="368" title="Invite someone to list their business on OpenStreetMap">
+                  <i class="sbg-button-icon fa fa-facebook" style="color: white"></i>
+                </a>
+
+                      
+                <a class="sbg-button sbg-button-twitter"  data-sbg-network="twitter"  data-sbg-text="Add your business to openstreetmap"  data-sbg-via="openstreetmap"  data-sbg-hashtags="geolocation,business,openstreetmap"  data-sbg-width="600"  data-sbg-height="258" title="Invite someone to list their business on OpenStreetMap">
+                  <i class="sbg-button-icon fa fa-twitter" style="color: white"></i>
+                </a>
+
+                      
+                <a class="sbg-button sbg-button-email"  data-sbg-network="email"  data-sbg-subject="Add your business to openstreetmap"  data-sbg-body="I thought you might be interested in listing your business on OpenStreetMap.
+
+                Visit http://onosm.org/ to get started easily."  title="Invite someone to list their business on OpenStreetMap">
+                  <i class="sbg-button-icon fa fa-envelope"  style="color: white"></i>
+                </a>
+
+            </section>
+
+            <footer>
+                <p class="center">Source code available on <a href="https://github.com/osmlab/onosm.org">Github</p>
+            </footer>
         </div>
         <script src='js/site.js'></script>
+        <script>sbg();</script>
     </body>
 </html>
