@@ -93,3 +93,6 @@ footer {
     display: block;
     margin-bottom: 10px;
 }
+#share a i {
+    color: white;
+}
